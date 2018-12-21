@@ -12,6 +12,7 @@
     "license": "SEE LICENSE IN <your-license-filename>",
     "repository": "<fill-your-repository-here>",
     "scripts": {
+        "remotedev": "remotedev --hostname=localhost --port=8000",
         "lint": "tslint \"src/**/*.ts\""
     },
     "dependencies": {
@@ -33,14 +34,15 @@
         "zone.js": "~0.8.18"
     },
     "devDependencies": {
+        "@angular/compiler-cli": "~7.1.0",
         "@nativescript/schematics": "~0.4.0",
+        "@ngtools/webpack": "~7.1.0",
         "codelyzer": "~4.5.0",
         "nativescript-dev-sass": "~1.6.0",
         "nativescript-dev-typescript": "~0.7.0",
         "nativescript-dev-webpack": "~0.18.0",
-        "tslint": "~5.11.0",
-        "@angular/compiler-cli": "~7.1.0",
-        "@ngtools/webpack": "~7.1.0"
+        "remotedev-server": "^0.3.1",
+        "tslint": "~5.11.0"
     },
     "readme": "NativeScript Application"
 }

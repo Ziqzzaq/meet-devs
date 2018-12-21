@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptCommonModule } from 'nativescript-angular/common';
+import { EducationalMaterialsRoutingModule } from '~/app/educational-materials/educational-materials-routing.module';
 import { EducationalMaterialsComponent } from '~/app/educational-materials/educational-materials.component';
 
 @NgModule({
@@ -7,7 +8,8 @@ import { EducationalMaterialsComponent } from '~/app/educational-materials/educa
         EducationalMaterialsComponent
     ],
     imports: [
-        NativeScriptCommonModule
+        NativeScriptCommonModule,
+        EducationalMaterialsRoutingModule
     ],
     schemas: [NO_ERRORS_SCHEMA]
 })

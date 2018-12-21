@@ -6,7 +6,10 @@ const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', loadChildren: '~/app/home/home.module#HomeModule'},
     {path: 'browse', loadChildren: '~/app/browse/browse.module#BrowseModule'},
-    {path: 'educational-materials', loadChildren: '~/app/browse/educational-materials.module#EducationalMaterialsModule'},
+    {
+        path: 'educational-materials',
+        loadChildren: '~/app/educational-materials/educational-materials.module#EducationalMaterialsModule'
+    },
     {path: 'featured', loadChildren: '~/app/featured/featured.module#FeaturedModule'},
     {path: 'settings', loadChildren: '~/app/settings/settings.module#SettingsModule'}
 ];
